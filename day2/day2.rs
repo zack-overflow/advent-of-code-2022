@@ -35,7 +35,7 @@ fn handle_input_part_1(filename: &str) -> i32 {
     }
 }
 
-fn parse_line(line: String) -> {
+fn parse_line(line: String) -> (&str) {
     let mut split_line = line.split(' ');
     let opponent_play = split_line.nth(0).unwrap();
     let our_play = split_line.nth(0).unwrap(); // must use nth(0) again since iterator consumes values in line above
